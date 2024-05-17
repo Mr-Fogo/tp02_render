@@ -1,0 +1,8 @@
+[
+    {"nom":"[VillainS]","nbTitre":"5","prix":"35","Auteur":"DreamCatcher","genre":"K-pop","image":"/assets/picture/ootd_album.jpg"},
+    {"nom":"[Apocalypse : Save us]","nbTitre":"14","prix":"35","Auteur":"DreamCatcher","genre":"K-pop","image":"/assets/picture/Save_Us.png"},
+    {"nom":"[Random Access Memories]","nbTitre":"13","prix":"40","Auteur":"Daft Punk","genre":"Electronic","image":"/assets/picture/tzm.jpg"},
+    {"nom":"[Dystopia : The Tree of Language]","nbTitre":"7","prix":"40","Auteur":"DreamCatcher","genre":"K-pop","image":"/assets/picture/Dreamcatcher_-_Dystopia_The_Tree_of_Language.jpg"},
+    {"nom":"[Raid of Dream]","nbTitre":"6","prix":"10","Auteur":"DreamCatcher","genre":"K-pop","image":"/assets/picture/rod.jpg"},
+    {"nom":"[aespa]","nbTitre":"12","prix":"15","Auteur":"aespa","genre":"K-pop","image":"/assets/picture/ae.jpg"}
+]
