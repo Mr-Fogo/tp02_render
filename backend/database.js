@@ -18,7 +18,7 @@ const albumsData = [
 //     storage: './database.sqlite',
 //     logging: true
 //   });
- //EN HAUT DE LA PAGE
+
   const sequelize = new Sequelize(POSTGRE_KEY, {
     dialect: 'postgres',
     protocol: 'postgres',
