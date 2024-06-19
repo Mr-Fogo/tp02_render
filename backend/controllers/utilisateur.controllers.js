@@ -43,8 +43,20 @@ exports.login = async (req, res) => {
 exports.register = async (req, res) => {
   const { nom, prenom, email, login, password } = req.body;
   let pattern = /^[A-Za-z0-9]{1,20}$/;
+  
   if (pattern.test(login) && pattern.test(password)) {
     try {
+      // Vérification si le login existe déjà
+      const existingUser = await User.findOne({ where: { login: login } });
+      
+      if (existingUser) {
+        // Si le login existe déjà, renvoyer une erreur 409 Conflict
+        return res.status(409).send({
+          message: "Le login est déjà utilisé. Veuillez en choisir un autre."
+        });
+      }
+
+      // Créer un nouvel utilisateur si le login n'existe pas déjà
       const user = await User.create({ name: nom, firstname: prenom, email: email, login: login, password: password });
       res.status(201).send(user);
     } catch (error) {
